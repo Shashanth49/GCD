@@ -1,5 +1,3 @@
-import java.util.Scanner;
-
 public class GCD {
     // Method to calculate the GCD using Euclidean Algorithm
     public static int findGCD(int a, int b) {
@@ -12,22 +10,14 @@ public class GCD {
     }
 
     public static void main(String[] args) {
-        // Create scanner object for user input
-        Scanner scanner = new Scanner(System.in);
-
-        // Take input for two numbers
-        System.out.print("Enter the first number: ");
-        int num1 = scanner.nextInt();
-
-        System.out.print("Enter the second number: ");
-        int num2 = scanner.nextInt();
+        // Two numbers: 10 and 20
+        int num1 = 10;
+        int num2 = 20;
 
         // Call the findGCD method and display the result
         int gcd = findGCD(num1, num2);
         System.out.println("The GCD of " + num1 + " and " + num2 + " is: " + gcd);
-
-        // Close the scanner
-        scanner.close();
     }
 }
+
 
